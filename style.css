@@ -30,7 +30,7 @@
     font-family: "Barlow", "Fraunces", sans-serif;
     
 }
- @media screen and (min-width: 375px) { 
+ @media screen and (max-width: 375px) { 
 
 
 
@@ -58,50 +58,52 @@ main {
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: center; 
+    justify-content: center;
+    max-width: 100vh;
 }
 
 .orangefruit img {
-    width: 425px;
+    width: 100%;
 
     
 }
 .boardwhite{
     background-color: white;
-    width: 425px;
-    margin: auto;
+    width: auto;
+    
     text-align: center;
 }
 .egg img {
-    width: 425px;
+    width: 100%;
 
 }
 
 .pinkglass img {
-    width: 425px;
+    width: 100%;
 }
-.cherry{
-    display: inline-block;
-    
-    
-}
+     /* .cherry{
+        
+        
+        
+    }  */
 .cherry img {
-    width: 425px;
+    width: 100%;
     height: 300px;
 }
 
 .cherry h1, .cherry p{
-    
+    margin: 0 auto;
     background-color: yellowgreen;
-    width: 425px;
+    width: 100%;
     
         
     
 }
 
 .tangerine img {
-    width: 425px;
+    width: 100%;
 }
+
 .all-avatars{
     text-align: center;
     background-color: var(--white);
@@ -116,30 +118,34 @@ main {
 }
 
 .links {
-       position: static; 
+       
     /* background-color: red; */
     display: flex;
     
-    justify-content: flex-end;
+    
+    justify-content: end;
 }
 
 .links li {
     
-    border: 2px solid blue;
+    font-size: 10px;
     padding: 10px;
     list-style-type: none;
-    margin-left: 8px;
+   
+}
+.images4{
+display: flex;
+flex-wrap: wrap;
 }
 
-
 .images4 img {
-    width: 160px;
+    width: 49%;
 
 
 }
 footer{
    display: flex;
-    width: 325px;
+    width: 100%;
     background-color: gray;
     height: 250px;
     align-items: center;
